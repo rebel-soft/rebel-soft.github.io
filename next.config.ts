@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
 // 使用 isProd 變數可以讓你在本地開發 (npm run dev) 時不受 basePath 影響。
 // const isProd = process.env.NODE_ENV === "production";
@@ -23,4 +24,5 @@ const nextConfig: NextConfig = {
   reactStrictMode: true, // 啟用 React 嚴格模式
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);

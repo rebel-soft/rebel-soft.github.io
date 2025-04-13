@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "helloWorld": "哈囉，世界！"
+  },
+  "AboutPage": {
+    "aboutText": "這是一個完全翻譯的靜態網站。"
+  },
+  "Header": {
+    "home": "首頁",
+    "about": "關於"
+  },
+  "LocaleSwitcher": {
+    "locale": "語言：{locale}"
+  }
+}
