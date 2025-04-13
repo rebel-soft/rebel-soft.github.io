@@ -1,5 +1,5 @@
 import { hasLocale } from "next-intl";
-import { routing } from "./routing";
+import { routing } from "@/i18n/routing";
 
 const getStaticConfig = async (locale: string) => {
   const resolvedLocale = hasLocale(routing.locales, locale)

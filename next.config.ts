@@ -17,9 +17,9 @@ const nextConfig: NextConfig = {
   // assetPrefix: isProd ? "/rebel-soft/" : "",
 
   // 由於 GitHub Pages 不提供 Next.js 圖片優化伺服器，需要禁用或更換 loader
-  images: {
-    unoptimized: true, // 最簡單的方式
-  },
+  // images: {
+  //   unoptimized: true, // 最簡單的方式
+  // },
   // --- 其他你的設定 ---
   reactStrictMode: true, // 啟用 React 嚴格模式
 };
