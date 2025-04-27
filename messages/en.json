@@ -1,15 +1,67 @@
 {
   "HomePage": {
-    "helloWorld": "Hello World !"
+    "welcome": "Welcome to RebelSoft",
+    "tagline": "Your trusted partner in software consultancy.",
+    "cta": "Learn More",
+    "portfolio": "View Portfolio"
   },
   "AboutPage": {
-    "aboutText": "This is a fully translated static website"
+    "title": "About RebelSoft",
+    "companyIntro": "RebelSoft is a leading software consultancy delivering high-quality web solutions.",
+    "missionTitle": "Our Mission",
+    "missionText": "To empower businesses through innovative and reliable software."
+  },
+  "TeamPage": {
+    "title": "Our Team",
+    "member1": {
+      "name": "Jane Doe",
+      "title": "Senior Web Developer",
+      "bio": "Jane has over 10 years of experience building scalable web applications."
+    },
+    "member2": {
+      "name": "John Smith",
+      "title": "Lead Frontend Engineer",
+      "bio": "John specializes in React and Next.js with a passion for UI/UX."
+    }
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "emailLabel": "Email",
+    "email": "info@rebelsoft.com",
+    "phoneLabel": "Phone",
+    "phone": "+1 234 567 890",
+    "addressLabel": "Address",
+    "address": "123 Software St, Tech City, Country"
   },
   "Header": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "team": "Team",
+    "contact": "Contact",
+    "portfolio": "Portfolio"
   },
   "LocaleSwitcher": {
     "locale": "Language: {locale}"
+  },
+  "PortfolioPage": {
+    "title": "Our Portfolio",
+    "intro": "Explore our selected works.",
+    "project1": {
+      "title": "Project Alpha",
+      "description": "A web platform for modern businesses."
+    },
+    "project2": {
+      "title": "Project Beta",
+      "description": "An e-commerce solution tailored to your needs."
+    },
+    "project3": {
+      "title": "Project Gamma",
+      "description": "A mobile app for seamless user experiences."
+    },
+    "project4": {
+      "title": "Project Delta",
+      "description": "A data analytics dashboard for insights."
+    }
   }
 }

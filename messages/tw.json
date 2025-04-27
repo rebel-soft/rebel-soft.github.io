@@ -1,13 +1,65 @@
 {
   "HomePage": {
-    "helloWorld": "哈囉，世界！"
+    "welcome": "歡迎來到 RebelSoft",
+    "tagline": "您可信賴的軟體諮詢夥伴。",
+    "cta": "了解更多",
+    "portfolio": "查看作品集"
   },
   "AboutPage": {
-    "aboutText": "這是一個完全翻譯的靜態網站。"
+    "title": "關於 RebelSoft",
+    "companyIntro": "RebelSoft 是領先的軟體諮詢公司，提供高品質的網路解決方案。",
+    "missionTitle": "我們的使命",
+    "missionText": "透過創新與可靠的軟體賦能企業。"
+  },
+  "TeamPage": {
+    "title": "我們的團隊",
+    "member1": {
+      "name": "Jane Doe",
+      "title": "高級 Web 開發工程師",
+      "bio": "Jane 擁有超過 10 年構建可擴展 Web 應用的經驗。"
+    },
+    "member2": {
+      "name": "John Smith",
+      "title": "首席前端工程師",
+      "bio": "John 專注於 React 與 Next.js，對 UI/UX 充滿熱情。"
+    }
+  },
+  "ContactPage": {
+    "title": "聯絡我們",
+    "subtitle": "取得聯繫",
+    "emailLabel": "電子郵件",
+    "email": "info@rebelsoft.com",
+    "phoneLabel": "電話",
+    "phone": "+1 234 567 890",
+    "addressLabel": "地址",
+    "address": "123 軟體街, 科技城, 國家"
   },
   "Header": {
     "home": "首頁",
-    "about": "關於"
+    "about": "關於",
+    "team": "團隊",
+    "contact": "聯絡",
+    "portfolio": "作品集"
+  },
+  "PortfolioPage": {
+    "title": "我們的作品集",
+    "intro": "探索我們的精選案例。",
+    "project1": {
+      "title": "Project Alpha",
+      "description": "為現代企業打造的網絡平台。"
+    },
+    "project2": {
+      "title": "Project Beta",
+      "description": "針對您需求量身定制的電子商務解決方案。"
+    },
+    "project3": {
+      "title": "Project Gamma",
+      "description": "為無縫使用者體驗設計的行動應用程式。"
+    },
+    "project4": {
+      "title": "Project Delta",
+      "description": "提供洞察的數據分析儀表板。"
+    }
   },
   "LocaleSwitcher": {
     "locale": "語言：{locale}"
