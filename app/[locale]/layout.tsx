@@ -1,11 +1,10 @@
-// app/[locale]/layout.tsx
-
 import "../globals.css";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import Footer from "@/components/Footer";
 
 type Props = {
   children: ReactNode;
@@ -37,10 +36,11 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className="bg-gray-100">
+      <body className="bg-gray-100 flex flex-col min-h-screen">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          <div className="p-5">{children}</div>
+          <div className="p-5 flex-grow">{children}</div>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
