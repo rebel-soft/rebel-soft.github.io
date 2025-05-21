@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
   // 你"必須"設定 basePath 和 assetPrefix
   // 如果你的倉庫是 'https://<username>.github.io/' (用戶或組織頁面)，則不需要設定
   // 將 '<repo-name>' 換成你的 GitHub 倉庫名稱
-  // basePath: isProd ? "/rebel-soft" : "",
-  // assetPrefix: isProd ? "/rebel-soft/" : "",
+  // basePath: "/rebel-soft",
+  // assetPrefix: "/rebel-soft/",
 
   // 由於 GitHub Pages 不提供 Next.js 圖片優化伺服器，需要禁用或更換 loader
   // images: {

@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx", // or "preserve" if you have a Babel setup for JSX
+    "module": "commonjs", // Jest typically uses CommonJS
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false, // Jest tests might not be ES modules
+    "types": ["jest", "@testing-library/jest-dom"] // Include Jest and jest-dom types
+  },
+  "include": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "jest.config.js",
+    "jest.setup.js",
+    "__mocks__/**/*"
+  ],
+  "exclude": ["node_modules", ".next"]
+}

@@ -1,65 +1,116 @@
 {
   "HomePage": {
-    "welcome": "歡迎來到 RebelSoft",
-    "tagline": "您可信賴的軟體諮詢夥伴。",
-    "cta": "了解更多",
-    "portfolio": "查看作品集"
+    "welcome": "反叛：啟動",
+    "tagline": "我們為勇者打造顛覆性軟件。歡迎加入反叛軍團。",
+    "cta": "探索我們的武器庫",
+    "portfolio": "查看案例檔案"
   },
   "AboutPage": {
-    "title": "關於 RebelSoft",
-    "companyIntro": "RebelSoft 是領先的軟體諮詢公司，提供高品質的網路解決方案。",
-    "missionTitle": "我們的使命",
-    "missionText": "透過創新與可靠的軟體賦能企業。"
+    "title": "反叛：解密",
+    "companyIntro": "他們說這不可能實現。他們說要遵循既定路線。我們撕毀了劇本。反叛軍是精英程式設計師和系統架構師的集合體，一行不屈不撓的代碼一步步構建未來。",
+    "missionTitle": "反叛軍宣言",
+    "missionText": "拆解過時的思維模式，打造革命性的軟件解決方案，賦能我們的客戶主導其領域。我們在挑戰中茁壯成長，交付的成果勝過千言萬語。",
+    "valuesTitle": "核心準則",
+    "value1": "1. 對抗平庸：「夠好」對我們來說遠遠不夠。",
+    "value2": "2. 無畏創新：若非突破性的，就不是反叛軍的作品。",
+    "value3": "3. 精準執行：每次都是完美無瑕的代碼。",
+    "value4": "4. 客戶成功即使命：我們是您反叛征程的夥伴。"
+  },
+  "ServicesPage": {
+    "title": "我們的武器庫",
+    "intro": "我們不只提供服務；我們提供戰略優勢。以下是我們如何對平庸宣戰，為您的事業打造勝利。",
+    "service1": {
+      "title": "戰略性網頁攻勢",
+      "description": "專為征服您的市場而設計的全棧網頁解決方案。從閃電般快速的API到沉浸式前端，我們根據您的目標打造數位武器。"
+    },
+    "service2": {
+      "title": "移動滲透單位",
+      "description": "快速、直覺且無情高效的跨平台移動應用程式。iOS 與 Android，原生或混合式 – 我們為任務部署最合適的工具。"
+    },
+    "service3": {
+      "title": "心理戰術 (UI/UX)",
+      "description": "精心設計的用戶界面和體驗，旨在吸引、轉化並獲得忠誠度。通過智能設計，我們將普通用戶轉變為忠實擁護者。"
+    },
+    "service4": {
+      "title": "雲端堡壘架構",
+      "description": "可擴展、安全且具彈性的雲端基礎設施。我們在 AWS、Azure 和 GCP 上設計並部署數位堡壘，預見每一個威脅與機遇。"
+    },
+    "cta": "啟動專案"
+  },
+  "BlogPage": {
+    "title": "反叛情報",
+    "intro": "來自數位前線的報導。反叛軍團隊的思考、策略和技術深度探討。知識就是力量。",
+    "readMore": "閱讀完整傳輸",
+    "post1": {
+      "slug": "static-sites-rebellion",
+      "title": "靜態衝擊：為何靜態網站引領數位革命",
+      "summary": "它們快速、安全且驚人地強大。我們剖析為何靜態網站生成是反叛軍數位主導的核心戰術。",
+      "date": "2024-07-26",
+      "author": "Cipher",
+      "content": "舊勢力仍然執著於動態的複雜性。我們擁護靜態的高效。這不是關於限制，而是關於戰略優勢。\n\n### 速度與安全性：不可妥協\n靜態網站是預渲染的 HTML、CSS 和 JavaScript。這轉化為超乎想像的速度和大幅降低的攻擊面。沒有可入侵的數據庫，沒有可在運行時利用的複雜伺服器端程序。純粹、不摻雜的性能表現。\n\n### 反叛軍優勢\n在 RebelSoft，我們運用尖端框架如 Next.js 和 Hugo 構建靜態網站，但絕非'基本'級別。我們整合無頭 CMS、無伺服器功能和第三方 API，提供豐富、互動的體驗，同時不犧牲靜態架構的核心優勢。這就是未來 – 精簡、強悍，令人難以置信的強大。"
+    },
+    "post2": {
+      "slug": "web3-beyond-the-battlecry",
+      "title": "Web3：超越戰吼 - 打造去中心化現實",
+      "summary": "區塊鏈、NFTs、DAOs – 這只是噪音，還是下一場數位革命的藍圖？反叛軍對去中心化前沿的實用性觀點。",
+      "date": "2024-07-20",
+      "author": "Glitch",
+      "content": "Web3 一詞在數位領域迴盪，常常更像是一聲戰吼而非明確定義的策略。但在炒作之外，根本性的變革正在發生。\n\n### 反叛核心信條\n在其核心，Web3 倡導去中心化、用戶數據主權及透明、無需信任的系統。這些不只是流行詞彙；它們是構建更加公平和彈性互聯網的基石。\n\n### RebelSoft 的偵察\n我們不僅是觀察者；我們積極實驗。從智能合約開發到探索去中心化身份解決方案，RebelSoft 站在前線，評估如何將 Web3 技術整合到健壯的實際應用中，提供切實價值，而非僅是投機性的興奮。革命將被建造，而非僅僅被推文。"
+    }
   },
   "TeamPage": {
-    "title": "我們的團隊",
+    "title": "認識我們的特工",
+    "intro": "這些是數位前沿的架構師，代碼的指揮官。我們不僅僅編寫軟件；我們發起數位叛變。",
     "member1": {
-      "name": "Jane Doe",
-      "title": "高級 Web 開發工程師",
-      "bio": "Jane 擁有超過 10 年構建可擴展 Web 應用的經驗。"
+      "name": "Cipher",
+      "title": "首席系統架構師",
+      "bio": "機器中的幽靈，Cipher 花了十年時間打造牢不可破的數位堡壘和開創下一代基礎設施。如果它很複雜，他們早已精通。"
     },
     "member2": {
-      "name": "John Smith",
-      "title": "首席前端工程師",
-      "bio": "John 專注於 React 與 Next.js，對 UI/UX 充滿熱情。"
+      "name": "Glitch",
+      "title": "首席介面工匠",
+      "bio": "Glitch 不僅設計 UI；他們雕塑挑戰常規的體驗。憑藉前端科技的武器庫，他們將願景轉化為真實體驗。"
     }
   },
   "ContactPage": {
-    "title": "聯絡我們",
-    "subtitle": "取得聯繫",
-    "emailLabel": "電子郵件",
+    "title": "發起聯繫",
+    "subtitle": "準備開始一場革命？或只是想討論前沿科技？我們在頻道上等你。",
+    "emailLabel": "安全通訊",
     "email": "info@rebelsoft.com",
-    "phoneLabel": "電話",
+    "phoneLabel": "直線聯繫",
     "phone": "+1 234 567 890",
-    "addressLabel": "地址",
-    "address": "123 軟體街, 科技城, 國家"
+    "addressLabel": "實地辦公室",
+    "address": "123 Software St, Tech City, Country"
   },
   "Header": {
     "home": "首頁",
     "about": "關於",
     "team": "團隊",
+    "services": "服務",
+    "blog": "情報",
     "contact": "聯絡",
     "portfolio": "作品集"
   },
   "PortfolioPage": {
-    "title": "我們的作品集",
-    "intro": "探索我們的精選案例。",
+    "title": "案例檔案",
+    "intro": "反叛的證明。每個項目都是我們對創新的不懈追求和對現狀的挑戰的見證。我們不僅僅是建造；我們征服。",
     "project1": {
-      "title": "Project Alpha",
-      "description": "為現代企業打造的網絡平台。"
+      "title": "行動代號：奇美拉",
+      "description": "一個建立在不可能邊緣的去中心化電子商務平台。結果：市場顛覆。"
     },
     "project2": {
-      "title": "Project Beta",
-      "description": "針對您需求量身定制的電子商務解決方案。"
+      "title": "代號：暗夜降臨",
+      "description": "AI驅動的物流系統，重新定義了全球強權的供應鏈效率。"
     },
     "project3": {
-      "title": "Project Gamma",
-      "description": "為無縫使用者體驗設計的行動應用程式。"
+      "title": "專案：起義",
+      "description": "遊戲化的移動學習應用，在教育科技領域引發了青年運動。"
     },
     "project4": {
-      "title": "Project Delta",
-      "description": "提供洞察的數據分析儀表板。"
-    }
+      "title": "計劃：霸權",
+      "description": "數據分析儀表板，為高管層提供可執行的情報，將數據轉化為主導力。"
+    },
+    "linkText": "訪問檔案"
   },
   "LocaleSwitcher": {
     "locale": "語言：{locale}"
