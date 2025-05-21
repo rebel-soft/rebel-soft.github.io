@@ -4,7 +4,6 @@ import { Link } from "@/i18n/navigation";
 
 export default function ServicesPage() {
   const t = useTranslations("ServicesPage");
-  const tHeader = useTranslations("Header"); // For the CTA button if its text is shared, or for consistency
 
   const services = [
     { titleKey: "service1.title", descriptionKey: "service1.description" },

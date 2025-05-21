@@ -1,7 +1,8 @@
-"use client";
-import { useTranslations } from "next-intl";
+// "use client"; // Ensure this is commented out or removed
+// import { useTranslations } from "next-intl"; // Temporarily comment out for testing build
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server"; // For server-side translation
 
 // Hardcoded slugs based on current messages/*.json content
 const postData: {
@@ -56,23 +57,32 @@ function renderContent(content: string) {
   });
 }
 
-export default function BlogPostPage({
+export default async function BlogPostPage({
   params,
 }: {
   params: { slug: string; locale: string };
 }) {
-  const t = useTranslations("BlogPage");
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "BlogPage",
+  });
 
+  const slug = params.slug;
+
+  // Try to find the post key by comparing the slug with translated slugs
   let postKey: string | null = null;
+  const potentialPostKeys = ["post1", "post2"]; // Add other post keys if you have more
 
-  if (params.slug === t("post1.slug")) {
-    postKey = "post1";
-  } else if (params.slug === t("post2.slug")) {
-    postKey = "post2";
+  for (const key of potentialPostKeys) {
+    if (slug === t(`${key}.slug`)) {
+      postKey = key;
+      break;
+    }
   }
 
+  // If no postKey is found after checking all potential keys, then it's a 404
   if (!postKey) {
-    return notFound(); // Or a custom "Post not found" component
+    return notFound();
   }
 
   const currentPostKey = postKey as "post1" | "post2"; // Type assertion
@@ -84,7 +94,8 @@ export default function BlogPostPage({
           href="/blog"
           className="text-rebel-electric-blue hover:text-rebel-magenta mb-8 block"
         >
-          &lt; {t("title")} {/* Using BlogPage.title for "Back to REBEL INTEL" */}
+          &lt; {t("title")}{" "}
+          {/* Using BlogPage.title for "Back to REBEL INTEL" */}
         </Link>
 
         <h1 className="font-pixel text-3xl sm:text-4xl text-rebel-neon-green font-bold mb-3">
