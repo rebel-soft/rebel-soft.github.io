@@ -7,18 +7,29 @@ export default function AboutPage() {
   const t = useTranslations("AboutPage");
 
   return (
-    <section className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-rebel-black text-rebel-text py-24 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-4xl">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="font-pixel text-4xl sm:text-5xl text-rebel-neon-green text-center font-bold mb-12">
           {t("title")}
         </h1>
-        <p className="text-base sm:text-lg md:text-xl mb-8">
+        <p className="text-lg sm:text-xl text-center mb-12">
           {t("companyIntro")}
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
+        <hr className="border-rebel-border my-12" />
+        <h2 className="font-pixel text-3xl sm:text-4xl text-rebel-electric-blue font-semibold mb-6">
           {t("missionTitle")}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl">{t("missionText")}</p>
+        <p className="text-lg mb-12">{t("missionText")}</p>
+        <hr className="border-rebel-border my-12" />
+        <h2 className="font-pixel text-3xl sm:text-4xl text-rebel-electric-blue font-semibold mb-6">
+          {t("valuesTitle")}
+        </h2>
+        <ul className="list-none space-y-4 text-lg mb-8">
+          <li>{t("value1")}</li>
+          <li>{t("value2")}</li>
+          <li>{t("value3")}</li>
+          <li>{t("value4")}</li>
+        </ul>
       </div>
     </section>
   );

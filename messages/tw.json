@@ -1,65 +1,116 @@
 {
   "HomePage": {
-    "welcome": "歡迎來到 RebelSoft",
-    "tagline": "您可信賴的軟體諮詢夥伴。",
-    "cta": "了解更多",
-    "portfolio": "查看作品集"
+    "welcome": "[TW] REBEL: INITIATE",
+    "tagline": "[TW] We forge disruptive software for the brave. Welcome to the rebellion.",
+    "cta": "[TW] Discover Our Arsenal",
+    "portfolio": "[TW] View Case Files"
   },
   "AboutPage": {
-    "title": "關於 RebelSoft",
-    "companyIntro": "RebelSoft 是領先的軟體諮詢公司，提供高品質的網路解決方案。",
-    "missionTitle": "我們的使命",
-    "missionText": "透過創新與可靠的軟體賦能企業。"
+    "title": "[TW] REBEL: DECLASSIFIED",
+    "companyIntro": "[TW] They said it couldn't be done. They said stick to the script. We tore up the script. Rebel is a collective of elite coders and system architects, building the future one line of defiant code at a time.",
+    "missionTitle": "[TW] THE REBEL MANIFESTO",
+    "missionText": "[TW] To dismantle outdated paradigms and engineer revolutionary software solutions that empower our clients to dominate their domain. We thrive on challenge and deliver results that speak louder than words.",
+    "valuesTitle": "[TW] CORE PROTOCOLS",
+    "value1": "[TW] 1. Defy mediocrity: We don't do 'good enough'.",
+    "value2": "[TW] 2. Innovate fearlessly: If it's not groundbreaking, it's not Rebel.",
+    "value3": "[TW] 3. Execute with precision: Flawless code, every time.",
+    "value4": "[TW] 4. Client success is the mission: We're partners in your rebellion."
+  },
+  "ServicesPage": {
+    "title": "[TW] OUR ARSENAL",
+    "intro": "[TW] We don't offer services; we provide strategic advantages. Here's how we wage war on mediocrity and engineer victory for your venture.",
+    "service1": {
+      "title": "[TW] Strategic Web Offensive",
+      "description": "[TW] Full-stack web solutions designed to conquer your market. From lightning-fast APIs to immersive front-ends, we build digital weapons tailored to your objectives."
+    },
+    "service2": {
+      "title": "[TW] Mobile Infiltration Units",
+      "description": "[TW] Cross-platform mobile applications that are fast, intuitive, and ruthlessly effective. iOS & Android, native or hybrid – we deploy the right tools for the mission."
+    },
+    "service3": {
+      "title": "[TW] Psychological Warfare (UI/UX)",
+      "description": "[TW] User interfaces and experiences engineered to captivate, convert, and command loyalty. We turn casual users into die-hard advocates through intelligent design."
+    },
+    "service4": {
+      "title": "[TW] Cloud Fortress Architecture",
+      "description": "[TW] Scalable, secure, and resilient cloud infrastructure. We design and deploy digital fortresses on AWS, Azure, and GCP that anticipate every threat and opportunity."
+    },
+    "cta": "[TW] INITIATE PROJECT"
+  },
+  "BlogPage": {
+    "title": "[TW] REBEL INTEL",
+    "intro": "[TW] Dispatches from the digital front lines. Thoughts, tactics, and tech deep-dives from the Rebel crew. Knowledge is power.",
+    "readMore": "[TW] Read Full Transmission",
+    "post1": {
+      "slug": "static-sites-rebellion",
+      "title": "[TW] Static Shock: Why Static Sites Are Leading a Digital Rebellion",
+      "summary": "[TW] They're fast, secure, and surprisingly powerful. We break down why static site generation is a core Rebel tactic for digital dominance.",
+      "date": "2024-07-26",
+      "author": "Cipher",
+      "content": "[TW] The old guard clings to dynamic complexity. We champion static efficiency. It's not about limitations; it's about strategic superiority.\n\n### Speed & Security: Non-Negotiable\n[TW] Static sites are pre-rendered HTML, CSS, and JavaScript. This translates to ludicrous speed and a drastically reduced attack surface. No databases to breach, no complex server-side processes to exploit during runtime. Pure, unadulterated performance.\n\n### The Rebel Advantage\n[TW] At RebelSoft, we leverage cutting-edge frameworks like Next.js and Hugo to build static sites that are anything but 'basic'. We integrate headless CMS, serverless functions, and third-party APIs to deliver rich, interactive experiences without compromising on the core benefits of static architecture. This is the future – lean, mean, and incredibly potent."
+    },
+    "post2": {
+      "slug": "web3-beyond-the-battlecry",
+      "title": "[TW] Web3: Beyond the Battlecry - Forging a Decentralized Reality",
+      "summary": "[TW] Blockchain, NFTs, DAOs – is it just noise, or the blueprint for the next digital revolution? A pragmatic Rebel perspective on the decentralized frontier.",
+      "date": "2024-07-20",
+      "author": "Glitch",
+      "content": "[TW] The term Web3 echoes through the digital landscape, often more as a warcry than a well-defined strategy. But beyond the hype, fundamental shifts are occurring.\n\n### Core Tenets of the Uprising\n[TW] At its heart, Web3 champions decentralization, user data sovereignty, and transparent, trustless systems. These aren't just buzzwords; they are the building blocks for a more equitable and resilient internet.\n\n### RebelSoft's Reconnaissance\n[TW] We're not just observing; we're actively experimenting. From smart contract development to exploring decentralized identity solutions, RebelSoft is on the front lines, evaluating how Web3 technologies can be integrated into robust, real-world applications that provide tangible value, not just speculative excitement. The revolution will be built, not just tweeted."
+    }
   },
   "TeamPage": {
-    "title": "我們的團隊",
+    "title": "[TW] MEET THE OPERATIVES",
+    "intro": "[TW] These are the architects of the digital frontier, the commanders of code. We don't just write software; we launch digital rebellions.",
     "member1": {
-      "name": "Jane Doe",
-      "title": "高級 Web 開發工程師",
-      "bio": "Jane 擁有超過 10 年構建可擴展 Web 應用的經驗。"
+      "name": "[TW] Cipher",
+      "title": "[TW] Chief Systems Architect",
+      "bio": "[TW] A ghost in the machine, Cipher has spent a decade forging unbreakable digital fortresses and pioneering next-gen infrastructures. If it's complex, they've already mastered it."
     },
     "member2": {
-      "name": "John Smith",
-      "title": "首席前端工程師",
-      "bio": "John 專注於 React 與 Next.js，對 UI/UX 充滿熱情。"
+      "name": "[TW] Glitch",
+      "title": "[TW] Lead Interface Forger",
+      "bio": "[TW] Glitch doesn't just design UIs; they sculpt experiences that defy convention. With an arsenal of front-end tech, they turn vision into visceral reality."
     }
   },
   "ContactPage": {
-    "title": "聯絡我們",
-    "subtitle": "取得聯繫",
-    "emailLabel": "電子郵件",
+    "title": "[TW] INITIATE CONTACT",
+    "subtitle": "[TW] Ready to start a revolution? Or just want to talk cutting-edge tech? We're on the frequency.",
+    "emailLabel": "[TW] SECURE COMLINK",
     "email": "info@rebelsoft.com",
-    "phoneLabel": "電話",
+    "phoneLabel": "[TW] DIRECT LINE",
     "phone": "+1 234 567 890",
-    "addressLabel": "地址",
-    "address": "123 軟體街, 科技城, 國家"
+    "addressLabel": "[TW] FIELD OFFICE",
+    "address": "123 Software St, Tech City, Country"
   },
   "Header": {
     "home": "首頁",
     "about": "關於",
     "team": "團隊",
+    "services": "[TW] Services",
+    "blog": "[TW] Intel",
     "contact": "聯絡",
     "portfolio": "作品集"
   },
   "PortfolioPage": {
-    "title": "我們的作品集",
-    "intro": "探索我們的精選案例。",
+    "title": "[TW] CASE FILES",
+    "intro": "[TW] Proof of rebellion. Each project a testament to our relentless pursuit of innovation and defiance of the status quo. We don't just build; we conquer.",
     "project1": {
-      "title": "Project Alpha",
-      "description": "為現代企業打造的網絡平台。"
+      "title": "[TW] Operation: Chimera",
+      "description": "[TW] A decentralized e-commerce platform built on the edge of impossibility. Result: Market disruption."
     },
     "project2": {
-      "title": "Project Beta",
-      "description": "針對您需求量身定制的電子商務解決方案。"
+      "title": "[TW] Codename: Nightfall",
+      "description": "[TW] AI-driven logistics system that redefined supply chain efficiency for a global powerhouse."
     },
     "project3": {
-      "title": "Project Gamma",
-      "description": "為無縫使用者體驗設計的行動應用程式。"
+      "title": "[TW] Project: Uprising",
+      "description": "[TW] Gamified mobile learning app that sparked a youth movement in education tech."
     },
     "project4": {
-      "title": "Project Delta",
-      "description": "提供洞察的數據分析儀表板。"
-    }
+      "title": "[TW] Initiative: Overlord",
+      "description": "[TW] Data analytics dashboard that provided actionable C-suite intelligence, turning data into dominance."
+    },
+    "linkText": "[TW] ACCESS FILE"
   },
   "LocaleSwitcher": {
     "locale": "語言：{locale}"

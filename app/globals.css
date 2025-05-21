@@ -1,21 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-:root {
-  --font-primary: "Poppins", sans-serif;
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-primary);
+  background-color: theme('colors.rebel-black');
+  color: theme('colors.rebel-text');
+  font-family: theme('fontFamily.sans');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: theme('fontFamily.pixel');
+  color: theme('colors.rebel-neon-green');
+  margin-bottom: theme('spacing.4'); /* Equivalent to mb-4 */
+}
+
+a {
+  color: theme('colors.rebel-electric-blue');
+  text-decoration: none; /* Optional: remove underline */
+}
+
+a:hover {
+  color: theme('colors.rebel-magenta');
+}
+
+p {
+  margin-bottom: theme('spacing.4'); /* Equivalent to mb-4 */
 }
