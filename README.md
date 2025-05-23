@@ -4,11 +4,11 @@
 
 ## 技術組合 (Technology Stack)
 
-*   **框架 (Framework):** Next.js
-*   **前端函式庫 (Frontend Library):** React
-*   **程式語言 (Programming Language):** TypeScript
-*   **樣式 (Styling):** Tailwind CSS
-*   **國際化 (Internationalization):** next-intl
+* **框架 (Framework):** Next.js
+* **前端函式庫 (Frontend Library):** React
+* **程式語言 (Programming Language):** TypeScript
+* **樣式 (Styling):** Tailwind CSS
+* **國際化 (Internationalization):** next-intl
 
 ## 開發環境建置 (Development Environment Setup)
 
@@ -16,12 +16,12 @@
 
 請確保您的開發環境已安裝以下軟體：
 
-*   Node.js (建議版本：^18.17.0 或 ^20.5.0 或 >=20.11.0)
-*   npm / yarn / pnpm / bun (任選其一作為套件管理器)
+* Node.js (建議版本：^18.17.0 或 ^20.5.0 或 >=20.11.0)
+* npm / yarn / pnpm / bun (任選其一作為套件管理器)
 
 ### 安裝與啟動 (Installation and Startup)
 
-1.  **下載專案依賴 (Download project dependencies):**
+1. **下載專案依賴 (Download project dependencies):**
 
     根據您選擇的套件管理器，執行以下指令之一：
 
@@ -35,7 +35,7 @@
     bun install
     ```
 
-2.  **啟動開發伺服器 (Start the development server):**
+2. **啟動開發伺服器 (Start the development server):**
 
     ```bash
     npm run dev
@@ -55,11 +55,11 @@
 
 ## 資料夾用途分類 (Folder Structure Explanation)
 
-*   **`app/`**: 包含應用程式的核心路由、頁面和佈局。Next.js 的 App Router 主要在此運作。
-*   **`components/`**: 存放可重用的 UI 元件。
-*   **`public/`**: 用於存放靜態資源，例如圖片、字型等，這些資源可以透過根 URL 直接訪問。
-*   **`i18n/`**: (如果使用 next-intl 或類似方案) 存放國際化相關的設定檔。
-*   **`messages/`**: (如果使用 next-intl 或類似方案) 存放不同語言的翻譯檔案 (例如 `en.json`, `zh-TW.json`)。
+* **`app/`**: 包含應用程式的核心路由、頁面和佈局。Next.js 的 App Router 主要在此運作。
+* **`components/`**: 存放可重用的 UI 元件。
+* **`public/`**: 用於存放靜態資源，例如圖片、字型等，這些資源可以透過根 URL 直接訪問。
+* **`i18n/`**: (如果使用 next-intl 或類似方案) 存放國際化相關的設定檔。
+* **`messages/`**: (如果使用 next-intl 或類似方案) 存放不同語言的翻譯檔案 (例如 `en.json`, `zh-TW.json`)。
 
 ## 測試方式 (Testing Instructions)
 
@@ -75,29 +75,14 @@ yarn test
 
 ## 其餘重點項目 (Other Key Items)
 
-*   **國際化 (i18n):** 本專案已初步設定 `next-intl` 以支援多語言。語言設定檔位於 `i18n/`，而翻譯文字檔則存放於 `messages/` 資料夾中。您可以透過修改這些檔案來新增或調整不同語言的內容。
-*   **字型優化:** 專案已整合 `next/font` 以優化字型載入效能。
+* **國際化 (i18n):** 本專案已初步設定 `next-intl` 以支援多語言。語言設定檔位於 `i18n/`，而翻譯文字檔則存放於 `messages/` 資料夾中。您可以透過修改這些檔案來新增或調整不同語言的內容。
+* **字型優化:** 專案已整合 `next/font` 以優化字型載入效能。
 
 ## 未來準備擴增功能 (Future Planned Features)
 
-*   **完整的單元測試與整合測試 (Comprehensive Unit and Integration Tests):** 引入 Jest 和 React Testing Library 以確保程式碼品質。
-*   **使用者身份驗證 (User Authentication):** 整合 NextAuth.js 或其他驗證方案。
-*   **資料庫整合 (Database Integration):** 串接後端資料庫，例如 PostgreSQL 或 MongoDB。
-*   **狀態管理 (State Management):** 根據需求引入 Zustand 或 Redux Toolkit 等狀態管理工具。
-*   **更全面的 UI 元件庫 (More Comprehensive UI Component Library):** 開發更多可重用的 UI 元件。
-*   **CI/CD 流程建置 (CI/CD Pipeline Setup):** 透過 GitHub Actions 或 GitLab CI/CD 自動化測試與部署流程。
-
-## 了解更多 (Learn More - 原有內容)
-
-要了解更多關於 Next.js 的資訊，請參考以下資源：
-
--   [Next.js Documentation](https://nextjs.org/docs) - 了解 Next.js 的功能和 API。
--   [Learn Next.js](https://nextjs.org/learn) - 一個互動式的 Next.js 教學。
-
-您可以查看 [Next.js GitHub repository](https://github.com/vercel/next.js) - 歡迎您的回饋和貢獻！
-
-## 在 Vercel 上部署 (Deploy on Vercel - 原有內容)
-
-部署您的 Next.js 應用程式最簡單的方式是使用 Next.js 的創建者提供的 [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)。
-
-更多詳細資訊請參閱我們的 [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying)。
+* **完整的單元測試與整合測試 (Comprehensive Unit and Integration Tests):** 引入 Jest 和 React Testing Library 以確保程式碼品質。
+* **使用者身份驗證 (User Authentication):** 整合 NextAuth.js 或其他驗證方案。
+* **資料庫整合 (Database Integration):** 串接後端資料庫，例如 PostgreSQL 或 MongoDB。
+* **狀態管理 (State Management):** 根據需求引入 Zustand 或 Redux Toolkit 等狀態管理工具。
+* **更全面的 UI 元件庫 (More Comprehensive UI Component Library):** 開發更多可重用的 UI 元件。
+* **CI/CD 流程建置 (CI/CD Pipeline Setup):** 透過 GitHub Actions 或 GitLab CI/CD 自動化測試與部署流程。
