@@ -18,7 +18,7 @@ export default function LocaleSwitcher() {
   return (
     <div className="relative inline-block">
       <select
-        className="appearance-none w-full bg-purple-100 dark:bg-gray-700 text-purple-700 dark:text-gray-200 border-2 border-purple-500 dark:border-purple-400 rounded px-4 py-2 pr-8 shadow hover:bg-purple-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
+        className="appearance-none w-full bg-rebel-orange dark:bg-rebel-orange text-rebel-black border-2 border-rebel-text dark:border-rebel-text rounded px-4 py-2 pr-8 shadow hover:bg-rebel-orange/90 dark:hover:bg-rebel-orange/90 focus:outline-none focus:ring-2 focus:ring-rebel-orange transition-colors"
         title="Select language"
         defaultValue={locale}
         onChange={onLocaleChange}
@@ -27,7 +27,7 @@ export default function LocaleSwitcher() {
           <option
             key={lang}
             value={lang}
-            className="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200"
+            className="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200" // Keeping option styling for now, can be revisited
           >
             {t("locale", { locale: lang })}
           </option>
@@ -35,7 +35,7 @@ export default function LocaleSwitcher() {
       </select>
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
         <svg
-          className="w-5 h-5 text-purple-600 dark:text-gray-200"
+          className="w-5 h-5 text-rebel-black dark:text-rebel-black"
           fill="none"
           stroke="currentColor"
           strokeWidth={2}
