@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
-export default function Footer() {
+export default function Footer({ locale }: { locale: string }) {
   const t = useTranslations("Footer");
   return (
     <footer className="bg-rebel-black text-rebel-text border-t border-rebel-border py-8 mt-16">
