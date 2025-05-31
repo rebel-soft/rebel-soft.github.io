@@ -14,11 +14,10 @@ export default function LocaleSwitcher() {
     const newLocale = e.target.value;
     router.replace(pathname, { locale: newLocale });
   };
-
   return (
     <div className="relative inline-block">
       <select
-        className="appearance-none w-full bg-rebel-orange dark:bg-rebel-orange text-rebel-black border-2 border-rebel-text dark:border-rebel-text rounded px-4 py-2 pr-8 shadow hover:bg-rebel-orange/90 dark:hover:bg-rebel-orange/90 focus:outline-none focus:ring-2 focus:ring-rebel-orange transition-colors"
+        className="appearance-none w-full bg-rebel-orange dark:bg-rebel-orange text-rebel-black border-2 border-rebel-text dark:border-rebel-text rounded px-3 py-1.5 pr-8 shadow hover:bg-rebel-orange/90 dark:hover:bg-rebel-orange/90 focus:outline-none focus:ring-2 focus:ring-rebel-orange transition-colors text-sm"
         title="Select language"
         defaultValue={locale}
         onChange={onLocaleChange}

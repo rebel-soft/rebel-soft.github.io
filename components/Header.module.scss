@@ -1,8 +1,55 @@
 /* Header.module.scss */
-.navGap {
-  gap: 10px;
-}
-
 .navLink {
   padding: 0.5rem 1.25rem; /* 增加水平內邊距 (px-5 py-2) */
+}
+
+/* 響應式佈局容器 */
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  flex-wrap: nowrap; /* 確保不換行 */
+}
+
+/* 導航容器 */
+.navigation {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1; /* 佔據剩餘空間 */
+  max-width: calc(100% - 130px); /* 確保有足夠空間給語言切換器 */
+}
+
+/* 語言切換器容器 */
+.localeSwitcherWrapper {
+  margin-left: 1.5rem;
+  flex-shrink: 0; /* 防止縮小 */
+  min-width: 100px; /* 確保最小寬度 */
+}
+
+/* 響應式設定 */
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px; /* 為語言切換器提供空間 */
+  }
+
+  .navigation {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px; /* 為語言切換器騰出空間 */
+    margin-bottom: 0;
+  }
+
+  .localeSwitcherWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; /* 確保顯示在最上層 */
+    margin-top: 5px; /* 頂部留點距離 */
+  }
 }
