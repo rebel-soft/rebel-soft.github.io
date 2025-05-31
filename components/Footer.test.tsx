@@ -1,8 +1,23 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { NextIntlClientProvider } from 'next-intl';
 import Footer from './Footer';
-// No next-intl needed here as Footer uses static text or already translated text via props if any.
-// However, if Footer started using useTranslations, we'd need NextIntlClientProvider.
+
+const messages = {
+  Footer: {
+    rebelsoftTitle: "RebelSoft",
+    copyright: "© 2025 RebelSoft. All rights reserved.",
+    linksTitle: "Links",
+    homeLink: "Home",
+    aboutLink: "About",
+    teamLink: "Team",
+    portfolioLink: "Portfolio",
+    contactLink: "Contact",
+    contactTitle: "Contact",
+    emailLabel: "Email: info@rebelsoft.com",
+    phoneLabel: "Phone: +1 234 567 890"
+  }
+};
 
 describe('Footer Component', () => {
   beforeEach(() => {
@@ -17,19 +32,30 @@ describe('Footer Component', () => {
   });
 
   it('renders copyright text', () => {
-    render(<Footer />);
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>
+    );
     expect(screen.getByText(/© 2025 RebelSoft. All rights reserved./i)).toBeInTheDocument();
   });
 
   it('renders section titles "Links" and "Contact"', () => {
-    render(<Footer />);
-    // These texts are part of the design and not from translation files for Footer
-    expect(screen.getByText('Links')).toBeInTheDocument(); // Assuming 'Links' is a direct text
-    expect(screen.getByText('Contact')).toBeInTheDocument(); // Assuming 'Contact' is a direct text
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>
+    );
+    expect(screen.getByRole('heading', { name: messages.Footer.linksTitle })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: messages.Footer.contactTitle })).toBeInTheDocument();
   });
 
   it('renders navigation links in the footer', () => {
-    render(<Footer />);
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>
+    );
     expect(screen.getByRole('link', { name: /Home/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /About/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Team/i })).toBeInTheDocument();

@@ -1,14 +1,12 @@
 // __mocks__/next-intl-navigation.js
-import React from 'react';
+const React = require('react');
 
-// Mock the Link component
-export const Link = ({ href, children, ...props }) => {
+const Link = ({ href, children, ...props }) => {
   return React.createElement('a', { href, ...props }, children);
 };
 
-// Mock other exports as needed, e.g., usePathname, useRouter
-export const usePathname = () => '/mock-path';
-export const useRouter = () => ({
+const usePathname = () => '/mock-path';
+const useRouter = () => ({
   push: jest.fn(),
   replace: jest.fn(),
   refresh: jest.fn(),
@@ -16,6 +14,22 @@ export const useRouter = () => ({
   forward: jest.fn(),
 });
 
-// If you use redirect or permanentRedirect, mock them too
-export const redirect = jest.fn();
-export const permanentRedirect = jest.fn();
+const redirect = jest.fn();
+const permanentRedirect = jest.fn();
+const getPathname = jest.fn(() => '/mock-path'); // Added getPathname
+
+exports.Link = Link;
+exports.usePathname = usePathname;
+exports.useRouter = useRouter;
+exports.redirect = redirect;
+exports.permanentRedirect = permanentRedirect;
+exports.getPathname = getPathname; // Export getPathname
+
+// Mock createNavigation
+exports.createNavigation = jest.fn(() => ({
+  Link,
+  redirect,
+  usePathname,
+  useRouter,
+  getPathname,
+}));

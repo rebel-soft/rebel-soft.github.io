@@ -114,5 +114,18 @@
   },
   "LocaleSwitcher": {
     "locale": "語言：{locale}"
+  },
+  "Footer": {
+    "rebelsoftTitle": "反叛軟體",
+    "copyright": "© 2025 反叛軟體. 保留所有權利.",
+    "linksTitle": "連結",
+    "homeLink": "首頁",
+    "aboutLink": "關於我們",
+    "teamLink": "團隊",
+    "portfolioLink": "專案展示",
+    "contactLink": "聯絡我們",
+    "contactTitle": "聯絡方式",
+    "emailLabel": "電子郵件: info@rebelsoft.com",
+    "phoneLabel": "電話: +1 234 567 890"
   }
 }

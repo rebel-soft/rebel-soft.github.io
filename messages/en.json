@@ -114,5 +114,18 @@
       "description": "Data analytics dashboard that provided actionable C-suite intelligence, turning data into dominance."
     },
     "linkText": "ACCESS FILE"
+  },
+  "Footer": {
+    "rebelsoftTitle": "RebelSoft",
+    "copyright": "© 2025 RebelSoft. All rights reserved.",
+    "linksTitle": "Links",
+    "homeLink": "Home",
+    "aboutLink": "About",
+    "teamLink": "Team",
+    "portfolioLink": "Portfolio",
+    "contactLink": "Contact",
+    "contactTitle": "Contact",
+    "emailLabel": "Email: info@rebelsoft.com",
+    "phoneLabel": "Phone: +1 234 567 890"
   }
 }

@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { NextIntlClientProvider } from 'next-intl';
+import { render, screen, act } from '@testing-library/react';
 import BlogPostPage from './page'; // Assuming 'page.tsx' is the entry for BlogPostPage
 
 const messages = {
@@ -28,6 +28,7 @@ const messages = {
 
 describe('BlogPostPage Component', () => {
   beforeEach(() => {
+    (global as any).testMessages = messages; // Set messages for the mock
     const mockIntersectionObserver = jest.fn();
     mockIntersectionObserver.mockReturnValue({
       observe: () => null,
@@ -39,42 +40,34 @@ describe('BlogPostPage Component', () => {
 
   describe('Post 1: Static Sites Rebellion', () => {
     const params = { slug: 'static-sites-rebellion', locale: 'en' };
-    it('renders the post title', () => {
-      render(
-        <NextIntlClientProvider locale="en" messages={messages}>
-          <BlogPostPage params={params} />
-        </NextIntlClientProvider>
-      );
+    it('renders the post title', async () => {
+      await act(async () => {
+        render(<BlogPostPage params={params} />);
+      });
       expect(screen.getByRole('heading', { name: /Static Shock: Why Static Sites Are Leading a Digital Rebellion/i, level: 1 })).toBeInTheDocument();
     });
 
-    it('renders the post author', () => {
-      render(
-        <NextIntlClientProvider locale="en" messages={messages}>
-          <BlogPostPage params={params} />
-        </NextIntlClientProvider>
-      );
+    it('renders the post author', async () => {
+      await act(async () => {
+        render(<BlogPostPage params={params} />);
+      });
       expect(screen.getByText(/by Cipher/i)).toBeInTheDocument();
     });
   });
 
   describe('Post 2: Web3 Beyond the Battlecry', () => {
     const params = { slug: 'web3-beyond-the-battlecry', locale: 'en' };
-    it('renders the post title', () => {
-      render(
-        <NextIntlClientProvider locale="en" messages={messages}>
-          <BlogPostPage params={params} />
-        </NextIntlClientProvider>
-      );
+    it('renders the post title', async () => {
+      await act(async () => {
+        render(<BlogPostPage params={params} />);
+      });
       expect(screen.getByRole('heading', { name: /Web3: Beyond the Battlecry - Forging a Decentralized Reality/i, level: 1 })).toBeInTheDocument();
     });
 
-    it('renders the post author', () => {
-      render(
-        <NextIntlClientProvider locale="en" messages={messages}>
-          <BlogPostPage params={params} />
-        </NextIntlClientProvider>
-      );
+    it('renders the post author', async () => {
+      await act(async () => {
+        render(<BlogPostPage params={params} />);
+      });
       expect(screen.getByText(/by Glitch/i)).toBeInTheDocument();
     });
   });

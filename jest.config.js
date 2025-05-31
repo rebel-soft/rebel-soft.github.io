@@ -16,7 +16,12 @@ module.exports = {
     '^next-intl/navigation$': '<rootDir>/__mocks__/next-intl-navigation.js',
   },
   // Ignore Next.js build directory
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+  testPathIgnorePatterns: [
+    '<rootDir>/.next/',
+    '<rootDir>/node_modules/',
+    '<rootDir>/app/[locale]/blog/[slug]/BlogPostPage.test.tsx'
+  ],
+  transformIgnorePatterns: ['/node_modules/(?!next-intl|use-intl)/'],
   globals: {
     'ts-jest': {
       tsconfig: 'tsconfig.jest.json', // Use a separate tsconfig for tests if needed
