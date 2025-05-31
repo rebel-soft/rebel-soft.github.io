@@ -2,12 +2,12 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 // 使用 isProd 變數可以讓你在本地開發 (npm run dev) 時不受 basePath 影響。
-// const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   /* config options here */
   // --- 核心設定 ---
-  output: "export", // 啟用靜態匯出
+  output: isProd ? "export" : undefined, // 只在生產環境啟用靜態匯出
   // --- GitHub Pages 特定設定 ---
   // 如果你的倉庫是像 'https://<username>.github.io/<repo-name>/' 這樣的子目錄
   // 你"必須"設定 basePath 和 assetPrefix

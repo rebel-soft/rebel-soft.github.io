@@ -3,57 +3,60 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
+import styles from "./Header.module.scss";
 
 export default function Header() {
   const t = useTranslations("Header");
   return (
     <header className="bg-rebel-card border-b border-rebel-border sticky top-0 z-50">
+      {" "}
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <nav className="flex">
+        {" "}
+        <nav className={`flex ${styles.navGap}`}>
           <Link
             href="/"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-3 md:mr-4 lg:mr-5 mb-2 ${styles.navLink}`}
           >
             {t("home")}
-          </Link>
+          </Link>{" "}
           <Link
             href="/about"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-3 md:mr-4 lg:mr-5 mb-2 ${styles.navLink}`}
           >
             {t("about")}
-          </Link>
+          </Link>{" "}
           <Link
             href="/services"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-3 md:mr-4 lg:mr-5 mb-2 ${styles.navLink}`}
           >
             {t("services")}
-          </Link>
+          </Link>{" "}
           <Link
             href="/blog"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-3 md:mr-4 lg:mr-5 mb-2 ${styles.navLink}`}
           >
             {t("blog")}
-          </Link>
+          </Link>{" "}
           <Link
             href="/team"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-3 md:mr-4 lg:mr-5 mb-2 ${styles.navLink}`}
           >
             {t("team")}
-          </Link>
+          </Link>{" "}
           <Link
             href="/contact"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-3 md:mr-4 lg:mr-5 mb-2 ${styles.navLink}`}
           >
             {t("contact")}
-          </Link>
+          </Link>{" "}
           <Link
             href="/portfolio"
-            className="text-rebel-text font-medium px-4 py-2 rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mr-6"
+            className={`text-rebel-text font-medium rounded border border-rebel-border hover:bg-rebel-black hover:text-rebel-neon-green transition-all duration-200 ease-in-out hover:shadow-neon-glow-green hover:-translate-y-0.5 mb-2 ${styles.navLink}`}
           >
             {t("portfolio")}
           </Link>
-        </nav>
-        <div className="">
+        </nav>{" "}
+        <div className="ml-6">
           <LocaleSwitcher />
         </div>
       </div>
